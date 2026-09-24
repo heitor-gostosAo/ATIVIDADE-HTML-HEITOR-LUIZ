@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Sistema de Cadastro</h1>
+    <p>Preencha todos os campo abaixo para concluir seu cadastro</p>
+    <form>
+        <fieldset>
+            <legend><h3>CADASTRO</h3></legend>
+            <table style="width: 100%;
+            border-collapse: collapse;">
+                <tr>
+                    <td style="width: 50%;
+                    padding: 4px;">
+                        <label for="Nome" id="Nome">Nome</label><br>
+        <input type="text" name="Nome" placeholder="Digite seu nome completo" 
+        required style="width: 95%;
+        margin-top: 5px;">
+                    </td>
+                    <td style="width: 50%;
+                    padding: 4px;">
+                        <label for="data" id="data">Data de Nascimento</label><br>
+        <input type="date" name="data"
+        required style="width: 95%;
+        margin-top: 5px;">
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 50%;
+                    padding: 4px;">
+                        <label for="cpf" id="cpf">CPF</label><br>
+        <input type="text" name="cpf" maxlength="11" minlength="11" placeholder="000.000.000-00"
+        required style="width: 95%;
+        margin-top: 5px;">
+                    </td>
+                    <td style="width: 50%;
+                    padding: 4px;">
+                        <label for="rg" id="rg">RG</label><br>
+        <input type="text" name="rg" maxlength="11" minlength="11" placeholder="000.000.000-00"
+        required style="width: 95%;
+        margin-top: 5px;">                
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 50%;
+                    padding: 4px;">
+                        <label for="sex" id="sex">Sexo</label><br>
+        <select name="sex" id="sex" 
+        required style="width: 96%;
+        height: 24px;
+        margin-top: 5px;">
+            <option value="">Selecione</option>
+            <option value="masculino">Masculino</option>
+            <option value="feminino">Feminino</option>
+            <option value="outro">Outro</option>
+            <option value="p.n.dizer">Prefiro Não Dizer</option>
+        </select>
+                     </td>
+                     <td style="width: 50%;
+                    padding: 4px;">
+                        <label for=""></label><br>
+                        <input type="hidden"
+        required style="width: 95%;
+        margin-top: 5px;">
+                     </td>
+                </tr>
+        </table>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend><h3>Contato</h3></legend>
+        </fieldset>
+    </form>
+</body>
+</html>

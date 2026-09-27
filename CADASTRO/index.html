@@ -16,14 +16,14 @@
                 <tr>
                     <td style="width: 50%;
                     padding: 4px;">
-                        <label for="Nome" id="Nome">Nome</label><br>
+                        <label for="Nome" id="Nome"><b>Nome</b><font color="red">*</font></label><br>
         <input type="text" name="Nome" placeholder="Digite seu nome completo" 
         required style="width: 95%;
         margin-top: 5px;">
                     </td>
                     <td style="width: 50%;
                     padding: 4px;">
-                        <label for="data" id="data">Data de Nascimento</label><br>
+                        <label for="data" id="data"><b>Data de nascimento</b><font color="red">*</font></label><br>
         <input type="date" name="data"
         required style="width: 95%;
         margin-top: 5px;">
@@ -32,15 +32,15 @@
                 <tr>
                     <td style="width: 50%;
                     padding: 4px;">
-                        <label for="cpf" id="cpf">CPF</label><br>
+                        <label for="cpf" id="cpf"><b>CPF</b><font color="red">*</font></label><br>
         <input type="text" name="cpf" maxlength="11" minlength="11" placeholder="000.000.000-00"
         required style="width: 95%;
         margin-top: 5px;">
                     </td>
                     <td style="width: 50%;
                     padding: 4px;">
-                        <label for="rg" id="rg">RG</label><br>
-        <input type="text" name="rg" maxlength="11" minlength="11" placeholder="000.000.000-00"
+                        <label for="rg" id="rg"><b>RG</b><font color="red">*</font></label><br>
+        <input type="text" name="rg" maxlength="11" minlength="11" placeholder="Digite seu RG"
         required style="width: 95%;
         margin-top: 5px;">                
                     </td>
@@ -48,7 +48,7 @@
                 <tr>
                     <td style="width: 50%;
                     padding: 4px;">
-                        <label for="sex" id="sex">Sexo</label><br>
+                        <label for="sex" id="sex"><b>Sexo</b><font color="red">*</font></label><br>
         <select name="sex" id="sex" 
         required style="width: 96%;
         height: 24px;
@@ -72,21 +72,21 @@
         </fieldset>
         <br>
         <fieldset>
-            <legend><h3>Contato</h3></legend>
+            <legend><h3>CONTATO</h3></legend>
             <table style="width: 100%;
             border-collapse: collapse;">
                 <tr>
                     <td style="width: 50%;
                     padding: 4px;">
-                        <label for="email" id="email">Email</label><br>
-            <input type="email" placeholder="********@email" 
+                        <label for="email" id="email"><b>Email</b><font color="red">*</font></label><br>
+            <input type="email" name="email" placeholder="********@email" 
             required style="width: 95%;
             margin-top: 5px;">
                     </td>
                     <td style="width: 50%;
-                    padding: 4px;">
-                    <label for="numero" id="numero">Telefone</label><br>
-            <input type="text" placeholder="(99) 9 9999-9999"
+                    ">
+                    <label for="numero" id="numero"><b>Telefone</b><font color="red">*</font></label><br>
+            <input type="text" name="numero" maxlength="11" minlength="11" placeholder="(99) 9 9999-9999"
             required style="width: 95%;
             margin-top: 5px;">
                     </td>
@@ -97,14 +97,97 @@
                 <tr>
                     <td style="width: 50%;
                     padding: 4px;">
-                    <label for="endereço" id="endereço">Endereço</label><br>
-                        <input type="text" placeholder="Digite seu endereço completo"
+                    <label for="endereço" id="endereço"><b>Endereço</b><font color="red">*</font></label><br>
+                        <input type="text" name="endereço" placeholder="Digite seu endereço completo"
             required style="width: 97%;
+            margin-top: 5px;">
+                    </td>
+                </tr>
+                </table>
+                <table style="width: 100%;
+                border-collapse: collapse;">
+                <tr>
+                    <td style="width: 50%;
+                    padding: 4px;">
+                    <label for="cidade" id="cidade"><b>Cidade</b><font color="red">*</font></label><br>
+                    <input type="text" name="cidade" placeholder="Digite sua cidade"
+            required style="width: 95%;
+            margin-top: 5px;">
+                    </td>
+                    <td style="width: 50%;
+                    padding: 4px;">
+                    <label for="estado"><b>Estado</b><font color="red">*</font></label><br>
+                    <select name="estado" id="estado"
+            required style="width: 95%;
+            margin-top: 5px;">
+                        <option value="">Selecione</option>
+                        <option value="PI">Piauí</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="CE">Ceará</option>
+                    </select>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend><h3>Acesso</h3></legend>
+            <table style="width: 100%;
+            border-collapse: collapse;">
+                <tr>
+                    <td style="width: 50%;
+                    padding: 4px;">
+                    <label for="senha" id="senha"><b>Senha</b><font color="red">*</font></label><br>
+                    <input type="password" name="senha" placeholder="Digite sua senha"
+            required style="width: 95%;
+            margin-top: 5px;">
+                    </td>
+                    <td style="width: 50%;
+                    padding: 4px;">
+                    <label for="rsenha" id="rsenha"><b>Confirme sua senha</b><font color="red">*</font></label><br>
+                    <input type="password" name="rsenha" placeholder="Repita sua senha"
+            required style="width: 95%;
             margin-top: 5px;">
                     </td>
                 </tr>
             </table>
         </fieldset>
+        <br>
+        <fieldset>
+            <legend><h3>Informações Adicionais</h3></legend>
+            <table style="width: 100%;
+            border-collapse: collapse;">
+                <tr>
+                    <td style="width: 50%;
+                    padding: 4px;">
+                    <label for="profissão" id="profissão"><b>Profissão</b></label><br>
+                    <input type="text" name="profissão" placeholder="Digite sua profissão"
+            required style="width: 95%;
+            margin-top: 5px;">
+                    </td>
+                    <td style="width: 50%;
+                    padding: 4px;">
+                    <label for="cconheceu">Como nos conheceu</label><br>
+                    <select name="cconheceu" id="cconheceu" required style="
+                    width: 95%;
+                    margin-top: 5px;">
+                        <option value="">Selecione</option>
+                        <option value="anuncios">Anúncios</option>
+                        <option value="amigos">Amigos</option>
+                        <option value="outro">Outros</option>
+                    </select>
+                    </td>
+                </tr>
+            </table>
+        </fieldset><br>
+        <input type="checkbox" name="aceito">
+        <label for="aceito" id="aceito">Li e aceito os <a href="https://pointerpointer.com/">termos de uso</a> e a <a href="https://www.youtube.com/watch?v=0Yxu2veU40Y">política de privacidade</a></label><br>
+        <br><input type="submit" name="aceito" value="Cadastrar">
     </form>
 </body>
 </html>

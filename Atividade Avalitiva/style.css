@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    margin: 60px;
+}
+
+.eu{
+    font-size: 24px;
+}
+
+.perfil {
+    h1 {
+        font-size: 35px;
+    }
+}
+
+.skill-box {
+    h1 {
+        font-size: 35px;
+    }
+}
+
+.un-box {
+    h1 {
+        font-size: 35px;
+    }
+}
+
+.xp-box {
+    h1 {
+        font-size: 35px;
+    }
+}
+
+.tall-box {
+    h1 {
+        font-size: 35px;
+    }
+
+    a {
+        color: black;
+        text-decoration: none;
+    }
+
+    a:hover {
+        font-weight: 700;
+    }
+
+    p:hover {
+        font-weight: 700;
+    }
+}
